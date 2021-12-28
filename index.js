@@ -5,11 +5,7 @@ const cheerio = require("cheerio")
 const nodemon = require("nodemon")
 
 // PORT
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
-var server_host = process.env.YOUR_HOST || '0.0.0.0';
-server.listen(server_port, server_host, function() {
-    console.log('Listening on port %d', server_port);
-});
+const PORT = process.env.port || 8000
 
 const app = express()
 
@@ -87,4 +83,4 @@ app.get('/news/:newspaperID', async (req, res) => {
         })
 })
 
-app.listen(PORT, () => console.log(`App running on ${PORT}`))
+app.listen(process.env.PORT || 5000)
