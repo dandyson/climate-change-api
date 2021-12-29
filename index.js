@@ -13,12 +13,12 @@ const newspapers = [
   {
     name: "theguardian",
     address: "https://www.theguardian.com/environment/climate-crisis",
-    base: ''
+    base: 'https://www.theguardian.com'
   },
   {
     name: "thetelegraph",
     address: "https://www.telegraph.co.uk/climate-change/",
-    base: ''
+    base: 'https://www.telegraph.co.uk'
   },
   {
     name: "theindependent",
